@@ -25,7 +25,7 @@ export default function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5500/users/", formData, {
+      await axios.post("https://assignment1-backend-d1s0.onrender.com/users/", formData, {
         withCredentials: true,
       });
       toast.success("Signup successful");

@@ -8,7 +8,7 @@ export default function Products() {
 
   const fetchProducts = async () => {
     try {
-      const res = await fetch("http://localhost:5500/products", {
+      const res = await fetch("https://assignment1-backend-d1s0.onrender.com/products", {
         method: "GET",
         credentials: "include"
       });
@@ -28,7 +28,7 @@ export default function Products() {
 
   const handleQuantityChange = async (id, quantity) => {
     try {
-      const res = await fetch(`http://localhost:5500/products/${id}/quantity`, {
+      const res = await fetch(`https://assignment1-backend-d1s0.onrender.com/products/${id}/quantity`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ quantity }),

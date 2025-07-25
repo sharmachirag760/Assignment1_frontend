@@ -14,7 +14,7 @@ export default function Login({ setAuth }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("http://localhost:5500/auth/login", {
+      const res = await fetch("https://assignment1-backend-d1s0.onrender.com/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

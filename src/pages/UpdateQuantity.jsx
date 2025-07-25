@@ -10,7 +10,7 @@ export default function UpdateQuantity() {
     e.preventDefault();
 
     try {
-      const res = await fetch(`http://localhost:5500/products/${productId}/quantity`, {
+      const res = await fetch(`https://assignment1-backend-d1s0.onrender.com/products/${productId}/quantity`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
